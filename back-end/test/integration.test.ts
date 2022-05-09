@@ -3,7 +3,6 @@ import app from '../src/app.js'
 import recommendationFactory from './factories/recommendationFactory.js'
 import { prisma } from '../src/database.js'
 
-
 const agent = supertest(app)
 
 describe('App integration tests', () => {
@@ -97,9 +96,7 @@ describe('App integration tests', () => {
     it('should return a random recommendation', async () => {
       await recommendationFactory.insertMany(10)
       const firstRecommendation = await agent.get(`/recommendations/random`)
-      const secondRecommendation = await agent.get(`/recommendations/random`)
       expect(firstRecommendation.body).toHaveProperty('name')
-      expect(secondRecommendation.body).toHaveProperty('name')
     })
   })
   describe('GET /recommendations/top/:amount', () => {
