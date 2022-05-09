@@ -23,7 +23,7 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": "off",
     "jsx-quotes": ["error", "prefer-single"],
-    "jest/expect-expect": "off"
-  
+    "jest/expect-expect": "off",
+    "no-unused-vars" : "off"
 }
 }
