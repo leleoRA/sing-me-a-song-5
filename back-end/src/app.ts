@@ -10,7 +10,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/recommendations", recommendationRouter);
-app.use(testsRouter);
+if (process.env.NODE_ENV === "tests") {
+  app.use(testsRouter);
+}
 
 
 
