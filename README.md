@@ -4,10 +4,6 @@ that feeling is passed with sing-me-a-song, here you can share the good stuff wi
 PS: Good stuff = Music. 
 
 
-<div align='center'>
-  <img style='ustify-content: center' src='./Gravacao_de_Tela_2022-05-03_as_18.05.57.mov' />
-</div>
-
 ## About
 The main features that you will see here:
 
@@ -39,19 +35,21 @@ The following tools and frameworks were used in the construction of the project:
   ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 
 ## How to run
-Clone this repository
 
-Install dependencies
+### Clone this repository
 
-npm i
+### Install dependencies
 
-Add environment variables for server and database like in dotenv example
+- npm i
 
-Create the database with
+- Add environment variables for server and database like in dotenv example
 
-npx prisma init
-npx prisma migrate dev
-Run the application with
-npm run dev (backend)
-npm start (frontend)
-Finally, access http://localhost:3000 on your favorite browser
+### Create the database with
+
+- npx prisma init
+- npx prisma migrate dev
+
+### Run the application with
+- npm run dev (backend)
+- npm start (frontend)
+### Finally, access http://localhost:3000 on your favorite browser
