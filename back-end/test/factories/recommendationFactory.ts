@@ -3,7 +3,7 @@ import {faker} from "@faker-js/faker"
 
 function recommendationBody() {
   return {
-    name: faker.word.adjective(),
+    name: faker.lorem.words(5),
     youtubeLink: "https://www.youtube.com/watch?v=eGrLJPKh1M8",
     score : faker.datatype.number({min : -5, max :999999})
   };
@@ -52,9 +52,4 @@ export default {
   insert,
   insertMany,
   findUniqueById,
-  /*
-    findUniqueByName,
-    findUniqueById,
-    createRandomRecommendationSample,
-    createRecommendationsWithScore, */
 };
