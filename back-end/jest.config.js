@@ -5,6 +5,7 @@ export default {
   extensionsToTreatAsEsm: [".ts"],
   globals: {
     "ts-jest": {
+      collectCoverage: true,
       useESM: true,
     },
   },
