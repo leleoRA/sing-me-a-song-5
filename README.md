@@ -16,7 +16,7 @@ See a random recommendation
 ## Why?
 This application was created to understand better automated tests, therefore the application is fully covered by e2e tests, integration tests and unit tests.
 
-Technologies
+## Technologies
 The following tools and frameworks were used in the construction of the project:
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
