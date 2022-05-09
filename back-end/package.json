@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.ts",
-    "test": "dotenv -e .env.test prisma db seed && NODE_OPTIONS=--experimental-vm-modules dotenv -e .env.test jest -i"
+    "test": "dotenv -e .env.test prisma db seed && NODE_OPTIONS=--experimental-vm-modules dotenv -e .env.test jest -i",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,8 @@
     "@types/joi": "^17.2.3",
     "@types/node": "^16.3.3",
     "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
     "dotenv-cli": "^5.1.0",
     "eslint": "^7.32.0",
     "faker": "^6.6.6",
